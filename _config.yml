@@ -9,8 +9,8 @@
 title: A+ Design System
 author: Matthew Higgins
 email: matthew.higgins@aalto.fi/
-baseurl: "/design-system" # the subpath of your site, e.g. /blog
-url: "https://apluslms.github.io/" # the base hostname & protocol for your site
+baseurl: "/a-plus-design-system" # the subpath of your site, e.g. /blog
+url: "https://apluslms.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

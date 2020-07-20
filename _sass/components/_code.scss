@@ -1,0 +1,74 @@
+/*------------------------------------*\
+    #CODE
+\*------------------------------------*/
+
+/**
+ * 1) Override some Prism defaults
+ * 2) Fixed width button for showing and hiding code
+ * 3) Change background color
+ * 4) Update the code color to have Exxon colors
+ */
+code[class*="language-"], pre[class*="language-"] {
+    tab-size: 2;
+}
+
+.pattern-code {
+    position: relative;
+    margin-top: 0;
+}
+
+.preview + .pattern-code pre {
+    border-top: 0;
+}
+
+//
+// Right top aligned buttons in previews and code
+//
+.preview-links {
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    z-index: 2;
+}
+
+.preview-links-btn {
+    background-color: $code_background_color;
+    border: none;
+    font-size: $font-size-sm;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: $color-gray-60;
+
+    &:hover {
+        background-color: $highlight_color;
+        color: $color-white;
+    }
+}
+
+.btn-storybook {
+    background-image: url(../icons/storybook.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-position-y: 3px;
+    background-position-x: 4px;
+}
+
+/* 3 */
+pre[class*="language-"] {
+    background-color: $color-gray-04;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+    text-shadow: none;
+}
+
+/**
+* Push the button up to be closer to the code-block in the show-more block
+*/
+.c-btn {
+    .show-more & {
+        position: relative;
+        bottom: 2rem;
+        z-index: 1;
+    }
+}

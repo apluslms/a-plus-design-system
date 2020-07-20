@@ -1,0 +1,12 @@
+{% if page.group %}
+	<ol class="c-breadcrumbs">
+		{% for item in site.data.primary-nav %}
+			{% if item.group == page.group %}
+				<li class="c-breadcrumbs__item">
+					{{ item.title }}
+				</li><!-- end c-breadcrumbs__item -->
+				
+			{% endif %}
+		{% endfor %}
+	</ol><!-- end c-breadcrumbs -->
+{% endif %}

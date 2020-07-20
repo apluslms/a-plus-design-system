@@ -1,0 +1,31 @@
+// prefix with underscores, to avoid conflicts in ifframes
+
+.__icon-preview {
+    width: 100px;
+    height: 80px;
+    position: relative;
+    display: inline-block;
+
+    text-align: center;
+    margin-bottom: 14px;
+    border: 3px solid $code_background_color;
+}
+
+.__icon-preview__icon {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.__icon-preview__value {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 3px;
+    background-color: $code_background_color;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+

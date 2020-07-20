@@ -1,0 +1,168 @@
+/*------------------------------------*\
+    #TEXT PASSAGE
+\*------------------------------------*/
+
+/**
+ * 1) A passage of text, including various components (i.e. article, blog post)
+ */
+.c-text-passage {
+
+	/**
+	 * all content except tables show in narrow container
+	 */
+	*:not(table) {
+		max-width: $l-max-width-narrow;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	p {
+		margin-bottom: 1rem;
+	}
+
+	/**
+	 * Link within the text passage
+	 */
+	a:not(.c-btn) {
+		color: $highlight_color;
+        text-decoration: underline;
+
+		&:hover, &:focus {
+			color: $color-gray-73;
+		}
+	}
+
+	/**
+	 * Blockquote within text passage
+	 */
+	blockquote {
+		padding-left: 0.8rem;
+		padding-right: 0.8rem;
+		padding-top: 0.4rem;
+		padding-bottom: 0.4rem;
+		border-left: 3px solid $color-gray-73;
+		color: $color-gray-50;
+		font-size: $font-size-sm-2;
+		font-style: normal;
+
+		h4 {
+			margin: 0;
+			font-style: normal;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	blockquote.do, blockquote.dont {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+	}
+
+	blockquote.do {
+		color: #155724;
+		background-color: #d4edda;
+		border-color: #92d9a3;
+	 }
+
+	blockquote.dont {
+		color: #721c24;
+		background-color: #f8d7da;
+		border-color: #fcafb7;
+
+	}
+
+	 /**
+	  * First-level heading within text passage
+	  */
+	 h1 {
+		 margin-bottom: 1rem;
+	 }
+
+	/**
+	 * Second-level heading within text passage
+	 */
+	h2 {
+		margin-top: 6rem;
+		margin-bottom: 2rem;
+		color: $color-gray-73;
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 3rem;
+			height: 0.3rem;
+			display: block;
+			background-color: $highlight_color;
+			position: absolute;
+			top: -0.75rem;
+			left: 0;
+		}
+	}
+
+	
+
+	/**
+	 * Third-level heading within text passage
+	 */
+	h3 {
+		margin: 3rem 0 1rem;
+		color: $highlight_color;
+	}
+
+	/**
+	 * Fourth-level heading within text passage
+	 */
+	h4 {
+		margin: 1rem 0 1rem;
+	}
+
+	/**
+	 * Fifth-level heading within text passage
+	 */
+	h5 {
+		margin: 1rem 0 1rem;
+	}
+
+	/**
+	 * Sixth-level heading within text passage
+	 */
+	h6 {
+		margin: 1rem 0 1rem;
+	}
+
+
+	/**
+	 * Unordered list within text passage
+	 */
+	ul {
+		list-style: disc;
+		margin-left: 3rem;
+		margin-bottom: 1rem;
+
+		li:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	/**
+	 * Ordered list within text passage
+	 */
+	ol {
+		list-style: decimal;
+		margin-left: 3rem;
+		margin-bottom: 1rem;
+
+		li:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+		line-height: 1.6;
+	}
+}

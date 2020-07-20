@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+{% include page-header.html %}
+
+<section class="c-section">
+
+	<!-- Live examples -->
+	<div class="c-tabs js-tabs">
+
+		<ul class="c-tabs__list {% if page.variations.size <= 1 %} u-display-none{% endif %}">
+			{% for variation in page.variations %}
+				<li class="c-tabs__item">
+					<a href="#tab-{{ variation.title | downcase | replace: ' ', '-' }}" class="c-tabs__link js-tab" data-code-tabs="tab-{{ variation.title | downcase | replace: ' ', '-' }}">{% if variation.title %}{{ variation.title }}{% endif %}</a>
+				</li><!-- end c-tabs__item -->
+			{% endfor %}
+		</ul><!-- end c-tabs__list -->
+		
+		<div class="c-tabs__body">
+
+			{% for variation in page.variations %}
+				<div class="c-tabs__panel js-tabs-panel {% if forloop.first == true %} is-active{% endif %}" id="tab-{{ variation.title | downcase | replace: ' ', '-' }}">
+
+					<section class="c-section">
+						<header class="c-section__header">
+							{% comment %} {% if variation.title %}<h5 class="c-section__title">{{ variation.title }} {% if variation.styleModifier %}<code class="u-font-size-med">{{ variation.styleModifier }}</code>{% endif %}</h5>{% endif %} {% endcomment %}
+							{% if variation.description %}<div>{{ variation.description | markdownify }} </div>{% endif %}
+						</header>
+
+						{% capture pattern_path %}_patterns/{{ variation.pattern }}{% endcapture %}
+						{% if variation.image %}
+							{% capture image_path %}/{{ variation.image }}{% endcapture %}
+							{% include pattern-image-preview.html pattern_path=pattern_path image_path=image_path storybook_url=variation.storybook %}
+						{% else if variation.pattern %}
+							{% include pattern-live-preview.html pattern_path=pattern_path storybook_url=variation.storybook %}
+						{% endif %}
+
+						{% if pattern %}
+							{% capture pattern_path %}_patterns/{{ variation.pattern }}{% endcapture %}
+							{% include pattern-code.html path=pattern_path %}
+						{% endif %}
+
+					</section><!--end section-->
+
+				</div><!--end c-tabs__panel-->
+			{% endfor %}
+		</div><!--end c-tabs__body-->
+	</div><!--end c-tabs-->
+
+</section><!-- end c-section -->
+
+<section class="c-section c-text-passage l-linelength-container">
+	{{ content }}
+</section><!-- end c-section -->
+
+{% if page.status == "Legacy" %}
+	<section class="c-section c-text-passage l-linelength-container">
+		<h2 id="discuss-on-github">Legacy Component</h2>
+		<p>This component has known issues and is in need of work. </p>
+		<p>Use it with caution. </p>
+		<p>If you need to use it, consider addressing some of the known issues at the same time as you're creating something new with it.</p>
+	</section><!-- end c-section -->
+{% endif %}
+
+
+{% if page.github_link %}
+	<section class="c-section c-text-passage l-linelength-container">
+		<h2 id="discuss-on-github">Discuss this</h2>
+		<p>If you have questions, ideas for improvements or feedback on using these guidelines, you can <a href="{{ page.github_link }}">join the disucssion in this GitHub issue</a>.</p>
+	</section>
+{% endif %}

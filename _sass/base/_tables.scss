@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    #TABLES
+\*------------------------------------*/
+
+/**
+ * Table
+ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    max-width: $l-max-width;
+    margin-bottom: 1rem;
+    font-size: $font-size-sm-2;
+}
+
+/**
+ * Table cells
+ */
+th {
+    text-align: left;
+}
+td, th {
+    padding: 0.75rem 1.75rem 0.75rem 0;
+}
+
+/**
+ * Table row
+ */
+tr {
+    vertical-align: top;
+}
+
+thead > tr {
+    border-bottom: 1px solid $color-gray-27;
+}
+
+tbody > tr {
+    border-bottom: 1px solid $color-gray-27;
+}
+

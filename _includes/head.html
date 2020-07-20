@@ -1,0 +1,32 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+
+	<title>{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% elsif page.type == "landing" %}{{ page.parent }} | {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	{% if page.description %}
+		<meta name="description" content="{{ page.description | strip_html | strip_newlines | truncate: 160 }}">
+	{% endif %}
+
+	<link rel="stylesheet" href="{{ "/assets/css/style-guide.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
+	<link rel="stylesheet" href="{{ "/assets/css/print.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" media="print">
+	<link rel="icon" href="{{ "/assets/favicon.ico" | prepend: site.baseurl }}">
+
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+	<link rel="alternate" type="application/rss+xml" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
+
+	{% if site.author %}
+		<meta name="author" content="{{ site.author }}">
+	{% endif %}
+
+	{% if site.gtm_id %}
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','{{ site.gtm_id }}');</script>
+	<!-- End Google Tag Manager -->
+	{% endif %}
+</head>

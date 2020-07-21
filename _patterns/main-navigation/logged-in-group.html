@@ -1,0 +1,279 @@
+---
+layout: pattern
+---
+
+<nav class="topbar navbar navbar-inverse navbar-static-top" aria-label="Main">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button
+        type="button"
+        class="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#bs-navbar-collapse"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Toggle navigation</span>
+
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand hidden-xs" href="#">A+</a>
+      <span class="navbar-brand visible-xs">
+        A+ &nbsp; Def. Course
+      </span>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <ul class="nav navbar-nav hidden-xs">
+        <li role="presentation" class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            DEF000 Def. Course
+
+            <span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li role="presentation">
+              <a href="#">
+                DEF000 Def. Course: Current
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="user-menu nav navbar-nav navbar-right hidden-xs">
+        <li role="presentation" class="menu-groups active">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="selection" style="display: inline;">
+              <small>
+                <span data-group-id="0"></span>
+                You are now submitting alone.
+              </small>
+              <span class="caret" aria-hidden="true"></span>
+            </span>
+            <span class="loader" style="display: none;">
+              <small>Registering selection...</small>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <form
+                id="group-select-form"
+                method="post"
+                action="/def/current/user/groups/select/"
+              >
+                <input
+                  type="hidden"
+                  name="csrfmiddlewaretoken"
+                  value="ELdYvDaDtmFCt8KiR41Z7rI6KUPpOBykeGpRc51Lh4EZIhkYglVs8f57BBXfuE3s"
+                />
+                <button
+                  type="submit"
+                  name="group"
+                  value="0"
+                  data-group-size="1"
+                >
+                  Submit alone
+                </button>
+              </form>
+            </li>
+
+            <li>
+              <form
+                id="group-select-form"
+                method="post"
+                action="/def/current/user/groups/select/"
+              >
+                <button
+                  type="submit"
+                  name="group"
+                  value="1"
+                  data-group-size="2"
+                >
+                  Submit with Andy Assistant
+                </button>
+              </form>
+            </li>
+          </ul>
+        </li>
+
+        <li role="presentation" class="profile-menu dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            Stacy Student <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li role="presentation">
+              <a href="#">Profile</a>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li role="presentation">
+              <a href="#">
+                <span
+                  class="glyphicon glyphicon-log-out"
+                  aria-hidden="true"
+                ></span>
+                Log out
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav visible-xs">
+        <li role="presentation" class="menu-groups active">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="selection">
+              <small>
+                <span data-group-id="0"></span>
+                You are now submitting alone.
+              </small>
+              <span class="caret" aria-hidden="true"></span>
+            </span>
+            <span class="loader hidden">
+              <small>Registering selection...</small>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <form
+                id="group-select-form"
+                method="post"
+                action="/def/current/user/groups/select/"
+              >
+                <input
+                  type="hidden"
+                  name="csrfmiddlewaretoken"
+                  value="ELdYvDaDtmFCt8KiR41Z7rI6KUPpOBykeGpRc51Lh4EZIhkYglVs8f57BBXfuE3s"
+                />
+                <button
+                  type="submit"
+                  name="group"
+                  value="0"
+                  data-group-size="1"
+                >
+                  Submit alone
+                </button>
+              </form>
+            </li>
+
+            <li>
+              <form
+                id="group-select-form"
+                method="post"
+                action="/def/current/user/groups/select/"
+              >
+                <input
+                  type="hidden"
+                  name="csrfmiddlewaretoken"
+                  value="ELdYvDaDtmFCt8KiR41Z7rI6KUPpOBykeGpRc51Lh4EZIhkYglVs8f57BBXfuE3s"
+                />
+                <button
+                  type="submit"
+                  name="group"
+                  value="1"
+                  data-group-size="2"
+                >
+                  Submit with Andy Assistant
+                </button>
+              </form>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="skip-link page-skip-link">
+            Skip course navigation
+          </a>
+        </li>
+
+        <li role="presentation" class="header">
+          <h4 id="course-menu-heading">Course</h4>
+        </li>
+
+        <li role="presentation" class="menu-home">
+          <a href="#">
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+            DEF000
+          </a>
+        </li>
+        <li role="presentation" class="menu-toc">
+          <a href="/def/current/toc/">
+            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+            Course materials
+          </a>
+        </li>
+        <li role="presentation" class="menu-results">
+          <a href="/def/current/user/results/">
+            <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+            Exercise results
+          </a>
+        </li>
+
+        <li role="presentation" class="menu-groups active">
+          <a href="/def/current/user/groups/">
+            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+            Form a group
+          </a>
+        </li>
+
+        <li role="presentation" class="header"><h4>Site</h4></li>
+        <li role="presentation">
+          <a href="#">
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+            Home
+          </a>
+        </li>
+
+        <ul class="dropdown-menu">
+          <li role="presentation">
+            <a href="#">
+              DEF000 Def. Course: Current
+            </a>
+          </li>
+        </ul>
+
+        <li role="presentation">
+          <a href="#">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            Stacy Student
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="#">
+            <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+            Log out
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

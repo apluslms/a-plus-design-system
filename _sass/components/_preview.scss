@@ -11,7 +11,7 @@
     padding: 1rem 0.7rem 1rem 0;
     width: 100%;
     position: relative;
-    border: 3px solid $code_background_color;
+    border: 3px solid darken($code_background_color, 30%);
     overflow: hidden;
     height: auto;
     background-color: $main_background_color;

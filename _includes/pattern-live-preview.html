@@ -2,8 +2,14 @@
 {% assign pattern = site.patterns | where:"path", include.pattern_path | first %}
 
 <div class="preview {% if include.border == false %} preview--noborder{% endif %}">
-    <iframe class="preview__iframe" frameBorder="0" width="100%" height="100%" src="{{ pattern.url | prepend: site.baseurl }}"></iframe>
+    <iframe class="preview__iframe" frameBorder="0" width="100%" height="100%" src="{{ pattern.url | prepend: site.baseurl }}" style="margin: 1rem;"></iframe>
     <div class="preview__handle"></div>
+
+    <div class="preview-links">
+        <a class="preview-links-btn btn-new-tab" href="{{ pattern.url | prepend: site.baseurl }}" target="_blank">
+            {{ site.data.locale['new_tab_preview'] | default:'Open example in new tab'}}
+        </a>
+    </div>
 
     {% if include.storybook_url %}
         <div class="preview-links">

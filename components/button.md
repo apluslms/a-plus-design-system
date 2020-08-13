@@ -13,7 +13,7 @@ variations:
   description: There are three button styles with semantic meanings. Each view should have up to one "default" action and up to one "danger" action.
   pattern: buttons/button-types.html
 - title: Sizes
-  description: Sizes `.btn-lg`, `.btn-sm` and `btn-xs` are available for all buttons. These can be used to fit into the space available and the surroundings on the page. 
+  description: Sizes `.btn-lg`, `.btn-sm` and `btn-xs` are available for all buttons. These can be used to fit into the space available and the surroundings on the page. While these are _not_ Bootstrap buttons, the sizes are designed to match Bootstrap 3.
   pattern: buttons/button-sizes.html
 - title: Assistive technology example
   description: If you have buttons which don't have unique text, but their purpose is clear in context (for example, they're inside table rows), use `.sr-only` to ensure they have discernable names for users of assistive technology.  
@@ -25,6 +25,8 @@ variations:
 Buttons should always perform an action. An action might be "log in", "submit (an exercise)" or "save and continue later".
 
 Carefully limit the number of different styles visible to users to ensure that the impact of the special styles isn't diluted.
+
+Note that you need to choose both a style and a size. Both must be declared as separate classes. 
 
 ## Usage
 

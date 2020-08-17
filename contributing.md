@@ -19,3 +19,15 @@ After some discussion, if a new component is agreed, create a component with a "
 
 It might make sense to only add components which will be usable multiple times. 
 
+### Creating a component page
+
+1. Fork the (design system repository) on GitHub.
+2. Clone the repository locally.
+3. In the root of your newly cloned repository, run `docker-compose up`. The first time might take several minutes, don't worry. 
+4. When the container is up and running, open the URL in the line that starts `Server address:` in your browser. This will automatically refresh as you add content.
+5. Create some patterns. They should live in `_patterns/[COMPONENT_NAME]/`, where `[COMPONENT_NAME]` matches the name of the component. Take a look at those already there, but they must include `layout: pattern` at the top, and only the code needed for the example. Remember that the code is published in the page, so pay attention to the style.
+6. Clone one of the pages from `components/`, giving it a name matching the name of the component.
+7. Update the title, description and other content.
+8. Add the pattern filenames in the `patterns` section at the top of your component file.
+9. Remember to double-check how the page looks in the broswer.
+10. Make a pull request containing the changes - this is the time for others to comment on your proposed guidelines.

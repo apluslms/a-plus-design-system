@@ -1,6 +1,9 @@
 - title: Introduction
   url: /
 
+- title: Styles 
+  group: styles
+
 - title: Components
   group: components
 

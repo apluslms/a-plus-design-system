@@ -16,7 +16,7 @@ variations:
   description: The student has some points. 
   pattern: points-progress-bar/partial.html
 - title: Full
-  description: The student has acheived all of the available points in this course. 
+  description: The student has achieved all of the available points in this course. 
   pattern: points-progress-bar/full.html
 ---
 

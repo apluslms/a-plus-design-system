@@ -15,12 +15,12 @@ It's important that these have sufficient contrast, and also stand out well agai
 {% include color-preview.html name="$aplus-focus" hexcode="#ffdd00" %}
 {% include color-preview.html name="$aplus-foreground" hexcode="#000000" %}
 
-Text shown on top of this background should be in the `$aplus-foreground` colour (typically solid balck) for high visibility. 
+Text shown on top of this background should be in the `$aplus-foreground` colour (typically solid black) for high visibility. 
 
 ## Implementing A+ focus styles
 ### Generic focus "ring"
 
-By default, all focusable `a`, `input`, `select` and `div` elements receive the default focus styles when they recieve keyboard focus (using the `.focus-visible` polyfill from WICG). 
+By default, all focusable `a`, `input`, `select` and `div` elements receive the default focus styles when they receive keyboard focus (using the `.focus-visible` polyfill from WICG). 
 
 The default focus styles, or `focus-with-outline-only`, adds a ring around the element. This is good for bigger elements, and elements with colours which would make re-colouring the background difficult.
 

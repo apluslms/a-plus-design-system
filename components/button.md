@@ -67,7 +67,7 @@ Use these as sparingly as possible. If you need multiple in one view, use second
 
 Button labels tell users what will happen when they click the button. Use verbs that describe the action, such as _'Add'_ or _'Delete'_. Use sentence-style capitalisation (only the first word in a phrase and any proper nouns capitalised) and no more than three words for button labels.
 
-If there are many buttons on the same page (for example, the buttons perform an action on an item which is represented by a row of a table), ensure they have distinctive labels for assistive technology users. You can acheive this using an `.sr-only` class.
+If there are many buttons on the same page (for example, the buttons perform an action on an item which is represented by a row of a table), ensure they have distinctive labels for assistive technology users. You can achieve this using an `.sr-only` class.
 
 ## Should it be a link?
 

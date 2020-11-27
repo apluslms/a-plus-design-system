@@ -29,5 +29,5 @@ It might make sense to only add components which will be usable multiple times.
 6. Clone one of the pages from `components/`, giving it a name matching the name of the component.
 7. Update the title, description and other content.
 8. Add the pattern filenames in the `patterns` section at the top of your component file.
-9. Remember to double-check how the page looks in the broswer.
+9. Remember to double-check how the page looks in the browser.
 10. Make a pull request containing the changes - this is the time for others to comment on your proposed guidelines.

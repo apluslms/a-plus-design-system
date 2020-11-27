@@ -3,7 +3,7 @@ layout: component-detail
 group: components
 
 title: Points Badge
-description: The progress bindicates how many points a student currently has on one particular question, exercise or chapter. 
+description: The progress indicates how many points a student currently has on one particular question, exercise or chapter. 
 status: Legacy
 
 github_link: https://github.com/apluslms/a-plus-design-system/issues/4

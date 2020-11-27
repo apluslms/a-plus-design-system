@@ -16,5 +16,4 @@ variations:
 
 ## Known Issues
 
-- DOM order (and therefore focus order) don't match the reading order.
-- The special characters used as arrows are read out as "left double angle bracket" and "right double anhle bracket"
+There are no known issues at this time.

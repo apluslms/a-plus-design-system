@@ -21,4 +21,4 @@ All pages should have **exactly one** title, which may have small supporting tex
 
 ## Known Issues
 
-- The colour contrast of the `small` text is too low.
+There are no known issues at this time.

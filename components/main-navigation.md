@@ -23,8 +23,4 @@ variations:
 
 ## Known Issues
 
-- The gradient background may be out of place in an otherwise flat interface.
-- The gradient background prevents automated contrast testing.
 - The group selection is course speciic, but this menu is not course-specific, so this may not be the logical position for it.
-- Within the DOM, content is repeated for mobile and desktop presentation versions.
-- Course navigation is rendered inside main navigation for mobile users, breaking the landmark structure and skip links.

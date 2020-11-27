@@ -18,6 +18,5 @@ variations:
 ## Known Issues
 
 - Many badges currently have empty strings added as tooltips.
-- All have too low colour contrast
 - The text is very small.
 - Without any context, assistive technology doesn't make the meaning of the numbers very clear. 

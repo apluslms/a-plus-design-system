@@ -23,4 +23,4 @@ variations:
 
 ## Known Issues
 
-- Colour contrast of the total available points
+There are no known issues at this time.

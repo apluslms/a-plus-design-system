@@ -24,5 +24,4 @@ The final breadcrumb should always be the currently visible page.
 
 ## Known Issues
 
-- Colour contrast of both links and the currently active element.
 - Should the top level be the front page?

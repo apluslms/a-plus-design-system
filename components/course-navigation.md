@@ -20,4 +20,4 @@ variations:
 
 ## Known Issues
 
-- It's unclear why every item has `role="presentation"`. 
+There are no known issues at this time.
